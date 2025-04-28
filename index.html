@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter sign-up form</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <div class="newsletter-container">
+      <div class="form-container">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+
+        <form action="#" id="emailForm" method="POST">
+          <div class="input-group">
+            <div class="label-container">
+              <label id="emailText" for="email"><b>Email Address</b></label>
+              <label id="emailAlert" style="display: none" for="emailAlert"
+                >Valid email required</label
+              >
+            </div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@company.com"
+            />
+          </div>
+
+          <button id="submit" type="submit">
+            Subscribe to monthly Newsletter
+          </button>
+        </form>
+      </div>
+
+      <div class="image-container">
+        <img
+          src="./src/assets/images/illustration-sign-up-desktop.svg"
+          alt="Newsletter illustration"
+        />
+      </div>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
