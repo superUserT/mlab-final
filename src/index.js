@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("thankYouModal");
   const confirmedEmail = document.getElementById("confirmedEmail");
   const dismissButton = document.getElementById("dismissButton");
+  const newsletterContainer = document.querySelector(".newsletter-container");
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
 
@@ -18,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       emailInput.style.color = "black";
       emailInput.style.backgroundColor = "#f0e9e9";
       confirmedEmail.textContent = email;
-
+      newsletterContainer.style.display = "none";
       modal.style.display = "flex";
     } else {
       emailAlert.style.display = "block";
@@ -30,12 +31,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   dismissButton.addEventListener("click", () => {
     modal.style.display = "none";
+    newsletterContainer.style.display = "grid";
     emailForm.reset();
   });
 
   modal.addEventListener("click", (event) => {
     if (event.target === modal) {
       modal.style.display = "none";
+      newsletterContainer.style.display = "grid";
     }
   });
 });
