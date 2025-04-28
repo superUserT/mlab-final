@@ -47,6 +47,35 @@
         />
       </div>
     </div>
+
+    <div id="thankYouModal" class="modal">
+      <div class="modal-content fade-in">
+        <svg
+          class="checkmark-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="64"
+          height="64"
+          viewBox="0 0 64 64"
+        >
+          <circle cx="32" cy="32" r="32" fill="#FF6155" />
+          <path d="M26 42L14 30L10 34L26 50L54 22L50 18L26 42Z" fill="white" />
+        </svg>
+
+        <h1>Thanks for subscribing!</h1>
+
+        <p>
+          A confirmation email has been sent to
+          <span class="email-highlight" id="confirmedEmail"
+            >email@company.com</span
+          >. Please open it and click the button inside to confirm your
+          subscription.
+        </p>
+
+        <button class="dismiss-button" id="dismissButton">
+          Dismiss message
+        </button>
+      </div>
+    </div>
     <script src="./src/index.js"></script>
   </body>
 </html>
