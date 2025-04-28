@@ -1,0 +1,31 @@
+{
+  "name": "mlab-final",
+  "version": "1.0.0",
+  "description": "A newsletter sign up",
+  "keywords": [
+    "Node",
+    "server"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superUserT/mlab-final.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Thabiso Rantsho",
+    "email": "rantshothabisomail@gmail.com",
+    "github": "https://github.com/superUserT"
+  },
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "jasmine": "^5.7.0",
+    "jquery": "^3.7.1",
+    "nodemon": "^3.1.10",
+    "pug": "^3.0.3"
+  }
+}
